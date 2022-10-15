@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* ///////////Login/////////////// */
+
+  .Main-Login{
+    display: flex !important;
+    justify-content: center;
+    height: 100vh;
+  }
+  .Main-Login form {
+    margin: 50px 0 0 0;
+  }
+  .Input-Box {
+    width: 450px;
+    padding: 10px 40px;
+    border: 1px solid;
+    outline: none;
+    background: transparent;
+    color: white;
+    margin: 10px 0;
+  }
+  .Input-Password {
+    width: 450px;
+    padding: 10px 40px ;
+    border: 1px  solid white !important;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-right: none;
+    margin: 10px 0;
+  }
+  .Login-Btn {
+    display: flex;
+    justify-content: center;
+  }
+  .Login-Btn button {
+    width: 450px;
+    padding: 10px 40px;
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad); 
+    /* background: transparent; */
+    border: 1px solid;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .Check-Box {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+  }
+  .Check-Box input {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .Check-Box label {
+    cursor: pointer;
+  }
+  .SignUp-Link {
+    display: flex;
+    justify-content: center;
+  }
+  .Section-Login {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   line-height: 2rem;
+  }
+  .Input-Login {
+  display: flex;
+  flex-direction: row; 
+ }
+ .Input-Login label {
+  position: relative;
+  left: 25px;
+  top: 20px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer; 
+  height: 0;
+ }
+ .eyeToggler-Login {
+  position: relative ;
+  right: 40px ;
+  top: 20px;
+  width: 20px;
+  cursor: pointer;
+  height: 0;
+ }
+
+
+
+
+  /* ///////////SignUp/////////////// */
+
+
+
+
+.Main-Input{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.Input-SignUp {
+    width: 450px;
+    padding: 10px 30px;
+    border: 1px solid;
+    outline: none;
+    background: transparent;
+    color: white;
+    margin: 10px 0;
+}
+.Section-Input {
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.Section-Input label {
+    position: relative;
+    top: 45px;
+    left: 10px;
+    
+}
+
+.Section-Input span {
+    color: red;
+    padding: 3px;
+    display: none;
+    width: 450px;
+}
+input:invalid[focused = "true"] {
+    border: 1px solid red;
+}
+input:invalid[focused = "true"] ~  span {
+    display: block ;
+    font-size: 14px;
+}
+.signUp-btn {
+    width: 450px;
+    border: 1px solid white;
+    outline: none;
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad); 
+    /* background: transparent; */
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    margin: 30px 0;
+    height: 54px;
+}
+::placeholder {
+    color: white;
+}
+
+.eyeToggler-SignUP{ 
+    position: relative;
+    border: none !important;
+    margin: 10px 0;
+    top: 12px;
+    right: 10%;
+    width: 5px;
+    height: 0;
+    cursor: pointer;
+}
+.Div-Input {
+    display: flex;
+}
+ .Section-Div {
+    display: flex;
+    line-height: 2rem; 
+ }
+
+
+
+
+ @media only screen and (max-width : 555px) {
+  
+  .Input-Box , .Input-Password , .Login-Btn button ,.Input-SignUp , .signUp-btn , .Section-Input span {
+    width: 380px;
+  }
+ }
+ @media only screen and (max-width : 420px) {
+  
+  .Input-Box , .Input-Password , .Login-Btn button ,.Input-SignUp , .signUp-btn , .Section-Input span {
+    width: 320px;
+  }
+  .Input-Box , .Input-Password , .Login-Btn button , .Input-SignUp , .signUp-btn {
+    height: 50px;
+  }
+  .eyeToggler-Login , .Input-Login label{
+    top: 18px;
+  }.eyeToggler-SignUP{
+    top: 10px;
+  }.Section-Input span{
+    font-size: 12px !important;
+  }
+ }
+ @media only screen and (max-width : 370px) {
+  
+  .Input-Box , .Input-Password , .Login-Btn button ,.Input-SignUp , .signUp-btn , .Section-Input span {
+    width: 280px;
+  }
+ }
